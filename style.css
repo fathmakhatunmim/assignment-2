@@ -174,13 +174,20 @@ ul{
          font-size: 50px;
          font-weight: bold;       
 }
+.list ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    display: block;   
+}
 
 .li{
      font-size: 22px;
      color:rgba(0, 0, 0, 0.5);
      margin-bottom:20px;
      width: 540px;
-     height: 108px;
+     /* height: 108px; */
+     height: auto;
      align-items: center;
     
 
@@ -188,6 +195,9 @@ ul{
 .trusted{
     width: 286px;
     height: 286px;
+    margin-top: -230px;
+    margin-left: -230px;
+    margin-bottom: 450px;
    
 
 }
@@ -295,4 +305,38 @@ ul{
     font-size: 16px;
    line-height: 1.2px;
 }
+.Lover{
+      flex-direction: column;
+    margin: 28px auto;
+    padding: 28px 10px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.trusted{
+    display: none;
+}
+.store{
+     width: 358px;
+    padding: 28px 10px;
+    display: block;
+    margin: 0 auto;
+ 
+    
+}
+.list h1{
+    font-size:24px ;
+    margin-bottom: 16px;
+    
+}
+
+.list li{
+     font-size: 14px;
+    margin-bottom: 8px;
+    width: auto;
+    height: auto; 
+    list-style: disc;
+
+}
+
 }
