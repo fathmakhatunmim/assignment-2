@@ -203,33 +203,86 @@ ul{
 
 }
 
-.multi_pic div{
+
+
+/* multi image */
+
+.multi_pic > div {
     flex: 1;
 }
-.multi_pic {
+.multi_pic{
     display: flex;
-    gap:20px;
-    margin-bottom: 5px;
-     margin:120px auto;
-     align-items: center;
-    
-}
-.vertical-img {
-    display: flex;
-    flex-direction: column;
+    margin: 120px auto;
+    width: 1140px;
     gap: 20px;
-    flex: 1; 
+   
 }
 .vertical-img img{
-  height: 50%;
-  align-items: center;
-  margin: 12px auto;
-  width: 367px;
-  height: 201px;
+    width: 100%;
+    height: 50%;
+    gap:25px;
+    border-radius: 14px;
+    
 }
-.single{
-    width: 753px;
-    height: 423.12px;
+.single img{
+    border-radius: 14px;
+    height: 100%;
+    
+}
+.multi_pic img,
+.vertical-img img,
+.single img {
+  filter: brightness(70%);
+  transition: 0.3s ease;
+}
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.img-text p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+
+
+.deal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.img-text a {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #f7f8f8;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: underline;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.img-text a:hover {
+  background-color: #ffffff;
+}
+.join{
+    background-image: url('assets/news-letter-bg.png');
+    width: 1140px;
+    height: 533px;
+    margin: 120px auto;
+    text-align: center;
+    justify-content: center;
+   align-items: center;
+   
+   padding: 10px;
+
+
 }
 /* Mobile Responsiveness: */
 @media screen  and (max-width:576px){
@@ -368,6 +421,39 @@ ul{
     height: auto; 
     list-style: disc;
 
+}
+.deals{
+     margin: 12px auto;
+    padding: 28px 10px;
+}
+.deals .main_title {
+  padding: 0 16px;
+  text-align: center;
+  
+}
+.deal-card {
+  width:360px;
+  margin-bottom: 2px;
+   /* margin: 28px auto; */
+  border-radius: 12px;
+}
+.img-text p {
+  font-size: 18px;
+}
+
+.img-text a {
+  font-size: 14px;
+  padding: 6px 16px;
+}
+.multi_pic {
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 16px;
+  width:361px;
+  /* height:172px ; */
+}
+.single img{
+    width: 361px;
 }
 
 }
